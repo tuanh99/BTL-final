@@ -3,10 +3,17 @@ Bây giờ đã học đến Js rồi, BTL của nhóm mình có 1 ít liên qua
 dành cho ai đã quên:
 
 git clone ...
+
 git branch TuAnh
+
 git checkout TuAnh
+
 git add .
+
 git commit -m "Tao nhanh TuAnh"
+
 git push --set-upstream origin TuAnh
+
 git checkout main
+
 git merge TuAnh
