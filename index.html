@@ -15,7 +15,7 @@
     <div class="main">
       <div class="nav">
         <div class="logo">
-          <h3>Fwedding</h3>
+          <h3><a href="#header">Fwedding</a></h3>
         </div>
         <div class="navigate">
           <ul>
@@ -30,7 +30,8 @@
           </ul>
         </div>
       </div>
-      <div class="header">
+      <div  id="header">
+        
         <div class="header_content">
             <h2>Jena & Mike</h2>
             <p>Saturday May 30th, 2019 - 28 Chalmers Street, Sydney.</p>
@@ -174,23 +175,6 @@
       <div id="rsvb"></div>
       <div id="location"></div>
     </div>
-    <script>
-        var nav = document.querySelector('.nav')
-        var logo = document.querySelector('.logo')
-        var nav_link = document.querySelectorAll('.nav-link')
-        window.addEventListener('scroll', () => {
-          var kcach = window.scrollY
-          if (kcach >= 100) {
-            nav_link.forEach(item => item.style.color = '#000')
-            nav.style.backgroundColor = '#fff'
-            logo.style.color = '#000'
-          } else {
-            nav_link.forEach(item => item.style.color = '#fff')
-            nav.style.backgroundColor = 'rgba(0,0,0,0)'
-            logo.style.color = '#fff'
-          }
-        })
     
-      </script>
   </body>
 </html>

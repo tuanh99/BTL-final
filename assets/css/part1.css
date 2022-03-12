@@ -46,10 +46,12 @@ body{
     margin-left: 64px;
 }
 
-.logo h3 {
+.logo h3 a {
     font-weight: 400;
     font-size: 20px;
     font-family: 'Source Serif Pro';
+    text-decoration: none;
+    color: #fff;
 }
 .navigate {
     margin-right: 40px;
@@ -76,14 +78,14 @@ body{
 
 }
 
-.header {
+#header {
     height: 100vh;
     background: url('../imgs/header.jpg') top center / 100% no-repeat;
     position: relative;
    
 }
 
-.header::before {
+#header::before {
     content: '';
     position: absolute;
     top: 0;
