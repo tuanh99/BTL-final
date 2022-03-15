@@ -6,6 +6,9 @@
     z-index: 0;
     object-fit: cover;
     position: absolute;
+}   
+ .spacer-one-top-lg{
+    margin-top: 100%;
  }
  a,::before
  {
