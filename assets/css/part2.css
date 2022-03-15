@@ -7,6 +7,9 @@
     object-fit: cover;
     position: absolute;
  }
+.spacer-one-top-lg{
+    margin-top: 100%;
+}
  a,::before
  {
    transition: all 0.3s ease 0s;
