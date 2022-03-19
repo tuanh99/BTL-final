@@ -26,7 +26,7 @@ Text Animation Effects:
 
 https://www.youtube.com/watch?v=_13a3r6MYeM
 
-- Heart cursor: 
+- Animation Effects: 
 
 https://www.youtube.com/watch?v=wkmCQm29dWg&list=PLIwxaAfv19yE6IY8RQ-YFequEQRVdBauV&index=1
 
