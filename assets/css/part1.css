@@ -22,7 +22,7 @@ body{
 }
 
 .app {
-    height: 1000vh;
+    height: 3000vh;
 }
 
 .nav {
@@ -270,5 +270,6 @@ button:hover {
     font-size: 14.5px;
     color: #e35d5d;
     font-weight: 600;
+    
 }
-
+!!

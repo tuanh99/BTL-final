@@ -23,6 +23,16 @@
      -ms-transition: all 0.3s ease 0s;
      -o-transition: all 0.3s ease 0s;
  }
+
+
+ /******* Gallery */
+ #gallery .bg{
+   /* height: 300vh; */
+
+ }
+ .container  {
+    height: 180vh;
+ }
  .bg-secondary-svg {
     fill: #fff9f5;
   }
@@ -69,6 +79,9 @@
      top: -16px;
    }
   
+/* */
+****
+
  section,
  .section {
      position: relative;
@@ -132,4 +145,9 @@
  div[class*="col-"].spacer-double-xxs, .spacer-double-xxs {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+ }
+
+ /* Wedding */
+ #wedding {
+    /* height: 100vh */
  }
