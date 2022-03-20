@@ -7,6 +7,9 @@
     object-fit: cover;
     position: absolute;
  }
+.spacer-one-top-lg{
+    margin-top: 100%;
+}
  a,::before
  {
    transition: all 0.3s ease 0s;
@@ -146,8 +149,11 @@
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
  }
+<<<<<<< HEAD
 
  /* Wedding */
  #wedding {
     /* height: 100vh */
  }
+=======
+>>>>>>> d48b86634600f4bbe7ddd057e6e2e8b1efbe5df2

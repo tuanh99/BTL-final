@@ -16,7 +16,7 @@
     <div class="main">
       <div class="nav">
         <div class="logo">
-          <h3><a href="#header">Fwedding</a></h3>
+          <h3><a class="fwedding" href="#header">Fwedding</a></h3>
         </div>
         <div class="navigate">
           <ul>
@@ -24,9 +24,9 @@
             <li><a class="nav-link" href="#love-story" >Love Story</a></li>
             <li><a class="nav-link" href="#wedding" >Wedding</a></li>
             <li><a class="nav-link" href="#gallery" >Gallery</a></li>
-            <li><a class="nav-link" href="#gift-registry" >Gift Registry</a></li>
+            <li><a class="nav-link" href="#gift" >Gift Registry</a></li>
             <li><a class="nav-link" href="#friends" >Friends</a></li>
-            <li><a class="nav-link" href="#rvsp" >Rvsp</a></li>
+            <li><a class="nav-link" href="#rsvp" >Rsvp</a></li>
             <li><a class="nav-link" href="#location" >Location</a></li>
           </ul>
         </div>
@@ -36,7 +36,7 @@
         <div class="header_content">
             <h2>Jena & Mike</h2>
             <p>Saturday May 30th, 2019 - 28 Chalmers Street, Sydney.</p>
-            <button>RSVP</button>
+            <button> <a class="click-me" href="#rsvp">Click Me</a></button>
           </div>
       </div>
       <div id="date">
@@ -322,9 +322,56 @@
     </div>
   </div>
       <div id="friends"></div>
-      <div id="rsvb"></div>
+      <div id="rsvp"></div>
       <div id="location"></div>
     </div>
     
+
+    <script>
+      var nav = document.querySelector('.nav')
+      var logo = document.querySelector('.fwedding')
+      var nav_link = document.querySelectorAll('.nav-link')
+      window.addEventListener('scroll', () => {
+        var kcach = window.scrollY
+        if (kcach >= 100) {
+          nav_link.forEach(item => item.style.color = '#000')
+          nav.style.backgroundColor = '#fff'
+          logo.style.color = '#000'
+        } else {
+          nav_link.forEach(item => item.style.color = '#fff')
+          nav.style.backgroundColor = 'rgba(0,0,0,0)'
+          logo.style.color = '#fff'
+        }
+      })
+    </script>
+
+
+    <script>
+
+      var header = document.querySelector('#header')
+
+      header.addEventListener('mousemove', (e) => {
+          let heart = document.createElement('span-heart')
+          let x = e.offsetX
+          let y = e.offsetY
+          heart.style.left = x + 'px'
+          heart.style.top = y + 'px'
+
+          let size = Math.random() * 80
+          heart.style.width = 20 + size + 'px'
+          heart.style.height = 20 + size + 'px'
+
+          let tranform = Math.random() * 360
+          heart.style.transform = 'rotate(' + tranform + 'deg)'
+
+          header.appendChild(heart)
+
+          setTimeout(() => {
+              heart.remove()
+          }, 1000)
+      })
+
+    </script>
+
   </body>
 </html>
