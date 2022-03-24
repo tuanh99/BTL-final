@@ -174,7 +174,7 @@ button {
     border-radius: 5px; /* làm tròn viền*/
     color: #fff;
     cursor: pointer;
-
+   
 
     /*- Effect */
 
@@ -207,6 +207,8 @@ button:hover {
 
 .click-me{
     color: #fff ;
+    text-decoration: none;
+
 }
 
 .click-me:hover{

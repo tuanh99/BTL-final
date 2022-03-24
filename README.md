@@ -12,7 +12,7 @@ git add .
 
 git commit -m "Tao nhanh TuAnh"
 
-git push --set-upstream origin TuAnh
+git push 
 
 git checkout main
 
