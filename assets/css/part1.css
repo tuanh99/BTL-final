@@ -22,7 +22,7 @@ body{
 }
 
 .app {
-    height: 1000vh;
+    height: 3000vh;
 }
 
 .nav {
@@ -46,10 +46,12 @@ body{
     margin-left: 64px;
 }
 
-.logo h3 {
+.logo h3 a {
     font-weight: 400;
     font-size: 20px;
     font-family: 'Source Serif Pro';
+    text-decoration: none;
+    color: #fff;
 }
 .navigate {
     margin-right: 40px;
@@ -76,14 +78,60 @@ body{
 
 }
 
-.header {
+#header {
     height: 100vh;
     background: url('../imgs/header.jpg') top center / 100% no-repeat;
     position: relative;
-   
+
+
 }
 
-.header::before {
+/* ********************************************************************** */
+
+/* !Xem lại code*/
+/*Animated Pink Heart */
+span-heart {
+	position: absolute;
+	pointer-events: none;
+	filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
+	animation: fadeInOut 1s linear infinite;
+}
+
+@keyframes fadeInOut {
+	0%,
+	100% {
+		opacity: 0;
+	}
+	20%,
+	80% {
+		opacity: 1;
+	}
+}
+
+span-heart::before {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	background: url(../imgs/pink_heart.png);
+	background-size: cover;
+	animation: moveShape 1s linear infinite;
+}
+
+@keyframes moveShape {
+	0% {
+		transform: translate(0) rotate(0deg);
+	}
+	100% {
+		transform: translate(300px) rotate(360deg);
+	}
+}
+
+/* *********************************************************************** */
+
+
+
+#header::before {
     content: '';
     position: absolute;
     top: 0;
@@ -107,6 +155,7 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 88px;
     font-weight: 200;
+    color: #fff;
     /* opacity: 0.7; làm mờ */
 }
 
@@ -122,15 +171,50 @@ button {
     background-color: #e35d5d;
     outline: none;
     border: none;
-    border-radius: 4px; /* làm tròn viền*/
+    border-radius: 5px; /* làm tròn viền*/
     color: #fff;
     cursor: pointer;
+
+
+    /*- Effect */
+
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    text-transform: uppercase; /* viết hoa toàn bộ chữ*/
+    letter-spacing: 4px; /* khoảng cách giữa các chữ*/
+    text-decoration: none; /*bỏ gạch chân*/
+    font-size: 24px;
+    overflow: hidden; /* che cái gạch chân ở trên*/
+    transition: 0.2s;
 }
 
 button:hover {
-    background-color: #df6e6e;
+    background-color: #f08686;
+
+
+
+    /*- Effect */
+
+    /* color: #255784; */
+    background: #e32f2f;
+    box-shadow: 0 0 10px #e32f2f, 0 0 40px #e32f2f, 0 0 80px #e32f2f;
+
+
+
+    transition-delay: 0.1s; 
 }
-/* DATE */
+
+.click-me{
+    color: #fff ;
+}
+
+.click-me:hover{
+    color: #fff
+}
+
+/* ############################################################# */
+
 #date {
     margin-top: 60px;
     display: flex;
@@ -268,5 +352,11 @@ button:hover {
     font-size: 14.5px;
     color: #e35d5d;
     font-weight: 600;
+    
 }
+
+
+
+
+
 

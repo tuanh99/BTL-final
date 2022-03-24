@@ -72,6 +72,9 @@
      top: -16px;
    }
   
+/* */
+****
+
  section,
  .section {
      position: relative;
@@ -136,3 +139,11 @@
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
  }
+<<<<<<< HEAD
+
+ /* Wedding */
+ #wedding {
+    /* height: 100vh */
+ }
+=======
+>>>>>>> d48b86634600f4bbe7ddd057e6e2e8b1efbe5df2
