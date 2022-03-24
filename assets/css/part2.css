@@ -6,10 +6,10 @@
     z-index: 0;
     object-fit: cover;
     position: absolute;
- }
-.spacer-one-top-lg{
+}   
+ .spacer-one-top-lg{
     margin-top: 100%;
-}
+ }
  a,::before
  {
    transition: all 0.3s ease 0s;
@@ -25,16 +25,6 @@
      -moz-transition: all 0.3s ease 0s;
      -ms-transition: all 0.3s ease 0s;
      -o-transition: all 0.3s ease 0s;
- }
-
-
- /******* Gallery */
- #gallery .bg{
-   /* height: 300vh; */
-
- }
- .container  {
-    height: 180vh;
  }
  .bg-secondary-svg {
     fill: #fff9f5;
