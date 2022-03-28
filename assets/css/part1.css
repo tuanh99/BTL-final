@@ -21,19 +21,28 @@ body{
     letter-spacing: 1px;
 }
 /******************************************************/
+
+.music{
+    position: relative;
+
+    top: 90%;
+    left: 95%;
+}
 .icon-music{
     
     position: fixed;
-    z-index: 1000;
-    font-size: 20%;
+    z-index: 2000;
+    /* font-size: 20%; */
     color: #000;
     width: 20px;
     height: 20px;
     top: 90%;
     left: 95%;
+    cursor: pointer;
     /* right: 50px; */
 
 }
+
 /******************************************************/
 
 
@@ -159,18 +168,23 @@ span-heart::before {
 #header::before {
     content: '';
     position: absolute;
+    /* position: relative; */
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     background-color: rgba(23, 23, 38, 0.6);
+    /* min-width: 900px; */
     /* background-size: inherit; */
 }
 
 .header_content {
     position: absolute;
+    
     color: #fff;
     text-align: center;
+    /* justify-content: center; */
+    align-items: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -249,14 +263,10 @@ button:hover {
     justify-content: center;
     padding: 96px 15px;
     margin: 0 69px;
-    /* width: 100%; */
-    /* -webkit-box-align: center !important; */
     align-items: center;
     box-sizing: border-box;
-
-
-
     height: 100vh;
+    flex-wrap: wrap;
 
 }
 
@@ -267,6 +277,7 @@ button:hover {
     align-items: center;
     justify-content: center;
     padding: 0 40px 0 0;
+    width: 330px;
 
 }
 .date-content h2{
@@ -304,13 +315,14 @@ button:hover {
 }
 
 .date-img img {
-    width: 70%;
+    width: 400px ;
 
 }
 #love-story{
     /* transition: all 0.4s linear; */
 
-    position: absolute;
+    /* position: absolute; */
+    position: relative;
     /* box-sizing: border-box; */
     z-index: 5;
     left: 50%;
@@ -352,7 +364,9 @@ ol{
     opacity: .8;
 }
 #love-story .love-story-img img{
-    width: 22%;
+    /* width: 22%; */
+    width: 230px;
+    height: 200px;
     padding: 40px 40px;
 }
 .love-story-icon-and-date{
@@ -360,23 +374,15 @@ ol{
     flex-direction: column;
 }
 
-/* .love-story-icon-and-date .icon-and-date::after{
-    content: '';
-    display: block;
-    position: absolute;
-    top: 4.357rem;
-    width: 10px;
-    height: 48px;
-    background: #bfbbb8;
-    opacity: .5;
-    
-} */
+
 
 
  .bg-icon-heart svg{
     /* background-color: #cc9999; */
-    width: 1.8%;
+    /* width: 1.8%; */
     /* border-radius: 50%; */
+    width: 20px;
+    height: 20px;
       
 }
  .text{
