@@ -41,5 +41,17 @@ header.addEventListener("mousemove", (e) => {
   }, 1000);
 });
 
+/**************************************************/ 
+let iconMusic= document.querySelector('.icon-music')
+let perfectMusic= document.querySelector('.perfect-music')
+let isPlay = false
+
+iconMusic.addEventListener('click', () =>{
+    // perfectMusic.play()
+   isPlay =! isPlay
+
+    isPlay ? perfectMusic.play() : perfectMusic.pause()
+})
+
 
 
