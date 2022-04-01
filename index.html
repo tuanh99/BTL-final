@@ -380,57 +380,85 @@
                 <input required type="radio" name="attending" id="attending-yes" > <label for="">Yes, I will be there</label>
                 <input required type="radio" name="attending" id="attending-no" > <label for="">Sorry, I can't come</label>
                 
+        <div id="rsvp">
+          <div class="wedding-registry">
+            <h1>Wedding Registry</h1>
+            <div class="small-text">The best present you could possibly give us</div>
+          </div>
+  
+          <div class="rsvp-form">
+            <form method="post">
+              <div class="form-group">
+                <label for="">Your Name</label> <br>
+                <input required placeholder="Your Name" type="text" name="name" id="your-name">
               </div>
+              <div class="form-group">
+                <label for="">Email Address</label> <br>
+                <input required placeholder="Your Email" type="email" name="email" id="email">
+              </div>
+  
+              <div class="form-group attending">
+                <label for="">Attending</label> <br>
+                <div class="form-group attending-bg-white">
+  
+                  <input required type="radio" name="attending" id="attending-yes" > <label for="">Yes, I will be there</label>
+                  <input required type="radio" name="attending" id="attending-no" > <label for="">Sorry, I can't come</label>
+                  
+                </div>
+              </div>
+              
+              <div class="form-group registry">
+                <input  class="submit" type="submit" value="Confirm registry" name="btnRegistry" id="btnRegistry"> <br>
+                
+                <!-- <a href="#">Confirm registry</a> <br> -->
+                <small>You will recieve a confirmation email.</small>
+              
+              </div>
+            </form>
+          </div>
+        </div>
+        <div id="location">
+  
+          <div class="where-to-stay">
+            <h1>Where To Stay</h1>
+            <div class="small-text">Accommodation - information below</div>
+          </div>
+  
+          <div class="row-location">
+            <div class="col-location">
+              <img src="./assets/imgs/loaction-hotel.jpg" alt="">
+              <h5>Hotel Monaco</h5>
+              <p>501 Geary Street <br> San Franciscio, California <br>
+                (415) 292 - 0100 </p>
+  
             </div>
-            
-            <div class="form-group registry">
-              <input  class="submit" type="submit" value="Confirm registry" name="btnRegistry" id="btnRegistry"> <br>
-              <small>You will recieve a confirmation email.</small>
-            
+            <div class="col-location">
+              <img src="./assets/imgs/location-accommodiation.jpg" alt="">
+              <h5>Villa Nikko</h5>
+              <p>222 Mason Street <br> San Franciscio, California <br>
+                ((415) 394 - 1111 </p>
+  
             </div>
-          </form>
-        </div>
-      </div>
-      <div id="location">
-
-        <div class="where-to-stay">
-          <h1>Where To Stay</h1>
-          <div class="small-text">Accommodation - information below</div>
-        </div>
-
-        <div class="row-location">
-          <div class="col-location">
-            <img src="./assets/imgs/loaction-hotel.jpg" alt="">
-            <h5>Hotel Monaco</h5>
-            <p>501 Geary Street <br> San Franciscio, California <br>
-              (415) 292 - 0100 </p>
-
-          </div>
-          <div class="col-location">
-            <img src="./assets/imgs/location-accommodiation.jpg" alt="">
-            <h5>Villa Nikko</h5>
-            <p>222 Mason Street <br> San Franciscio, California <br>
-              ((415) 394 - 1111 </p>
-
-          </div>
-          <div class="col-location">
-            <img src="./assets/imgs/location-afterparty.jpg" alt="">
-            <h5>Hotel Monaco</h5>
-            <p>670 Ocean Ave <br> Santa Monica <br>
-              (415) 394 - 1111 </p>
-
+            <div class="col-location">
+              <img src="./assets/imgs/location-afterparty.jpg" alt="">
+              <h5>Hotel Monaco</h5>
+              <p>670 Ocean Ave <br> Santa Monica <br>
+                (415) 394 - 1111 </p>
+  
+            </div>
           </div>
         </div>
-      </div>
-      <div class="footer">
-        <div class="content-in-footer">
-          <h1>Thanks for Visiting our Website</h1>
-        <h3>Jena & Mike</h3>
-        <h6>Saturday May 30th, 2022 - 28 Chalmers Street, Sydney</h6>
+        <div class="footer">
+          <div class="content-in-footer">
+            <h1>Thanks for Visiting our Website</h1>
+          <h3>Jena & Mike</h3>
+          <h6>Saturday May 30th, 2022 - 28 Chalmers Street, Sydney</h6>
+          </div>
+          
         </div>
-        
       </div>
-    </div>
+      </div>
+      
     <script src="./assets/js/main.js"></script>
 
   </body>

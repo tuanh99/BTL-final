@@ -225,7 +225,7 @@ button {
     letter-spacing: 4px; /* khoảng cách giữa các chữ*/
     text-decoration: none; /*bỏ gạch chân*/
     font-size: 24px;
-    overflow: hidden; /* che cái gạch chân ở trên*/
+    /* overflow: hidden;  */
     transition: 0.2s;
 }
 
@@ -239,9 +239,6 @@ button:hover {
     /* color: #255784; */
     background: #e32f2f;
     box-shadow: 0 0 10px #e32f2f, 0 0 40px #e32f2f, 0 0 80px #e32f2f;
-
-
-
     transition-delay: 0.1s; 
 }
 
