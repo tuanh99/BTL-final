@@ -13,6 +13,11 @@ a{
 li{
     list-style: none;
 }
+li a{
+    text-decoration: none;
+    color: #fff;
+
+}
 h1,h2{
     color: rgb(252, 96, 13)
 }
@@ -41,6 +46,15 @@ h1,h2{
     background-color: #fff;
     color: #001c40;
 }
+.slide-menu li:hover>a{
+    color: #001c40;
+}
+.slide-menu.dashboard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
 svg{
     width: 30px;
     height: 30px;
@@ -58,7 +72,7 @@ svg{
     position: fixed;
     top: 0;
     right: 0;
-    width: 80vw;
+    max-width: 80vw;
     height: 10vh;
     background: #fff;
     display: flex;
@@ -233,7 +247,7 @@ i{
 }
 
 .admin {
-	display: block;
+	display: none;
 }
 /* ******************************************************************************* */
 
