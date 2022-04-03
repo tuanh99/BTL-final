@@ -126,8 +126,9 @@
     width: 300px;
     border-radius: 5px;
     padding-left: 12px;
-    border: none;
-
+    /* border: none; */
+    /* outline-style: none; */
+    
 }
 
 .form-group .attending-bg-white{
