@@ -13,11 +13,6 @@ a{
 li{
     list-style: none;
 }
-li a{
-    text-decoration: none;
-    color: #fff;
-
-}
 h1,h2{
     color: rgb(252, 96, 13)
 }
@@ -43,23 +38,7 @@ h1,h2{
     align-items: center;
 }
 .slide-menu li:hover{
-    background-color: #ccc;
-    color: #001c40;
-}
-.slide-menu li:hover>a{
-    color: #001c40;
-}
-.slide-menu.dashboard{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* background-color: #ccc; */
-
-}
-.dashboard{
     background-color: #fff;
-}
-.dashboard>a{
     color: #001c40;
 }
 svg{
@@ -254,7 +233,7 @@ i{
 }
 
 .admin {
-	display: none;
+	display: block;
 }
 /* ******************************************************************************* */
 
@@ -309,5 +288,18 @@ i{
     /* font-family: Verdana,sans-serif; */
     font-size: 22px;
     font-weight: 600;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 15px;
+}
+table{
+    width: 150%;
+}
+.recent-orders{
+    width: 75%;
+    
 }
 
