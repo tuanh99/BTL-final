@@ -58,10 +58,10 @@ h1,h2{
 
 }
 
-.respository{
+.message{
     background-color: #fff;
 }
-.respository>a  {
+.message>a  {
     color: #001c40;
 }
 li{
@@ -161,4 +161,117 @@ i{
 
 }
 
-/* *************************************************** */
+/* **************************chat-list************************* */
+.chat-list{
+    position: fixed;
+    width: 700px;
+    height: 622px;
+    background-color: rgba(255, 255, 255,0.7);
+    box-shadow: 5px 5px 5px 5px #d2dce9;
+
+    top: 95px;
+    left: 330px;
+    /* margin-top: 95px;
+    margin-left: 330px; */
+    border-radius: 10px;
+}
+.chat-list>h2{
+    margin: 20px 20px;
+}
+.chat-list-item>li{
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+    width: 94%;
+    height: 80px;
+    border: 1px solid #d2dce9e3;
+    margin: 10px 20px;
+    border-radius: 4px
+}
+.chat-list-item>li>img{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 0 15px;
+}
+.content-in-chat{
+    /* width:; */
+}
+.content-in-chat h6{
+    /* font-size: 12px; */
+    letter-spacing: 1px;
+    width: 200px;
+
+}
+.chat-list-item>li>p{
+    /* height: 100%; */
+    margin-left: 250px;
+    margin-right: 26px;
+    font-size: 12px;
+}
+.chat-list-item>li>span{
+    /* color: #fff; */
+    background-color: rgb(225, 15, 15);
+    border-radius: 50%;
+    /* font-size: 8px; */
+    width: 10px;
+    height: 10px;
+    animation: 1s infinite;
+    margin-bottom: 40px;
+    animation-name: circle;
+    animation-duration: 2s;
+    /* margin: 20px; */
+}
+@keyframes circle {
+    from{ background-color: rgb(242, 148, 148);}
+    to{ background-color: red;}
+}
+
+
+/* ********************Message detail */
+
+.message-detail{
+    position: fixed;
+    top: 95px;
+    right: 0;
+    width: 435px;
+    height: 622px;
+    background-color: #fff;
+    margin-right: 20px;
+    border-radius: 6px;
+    box-shadow: 5px 5px 5px 5px #d2dce9 ;
+
+
+}
+.message-detail>.message-left{
+    display: flex;
+}
+.message-detail>.message-right{
+    /* text-align: end; */
+    
+}
+.message-left img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 40px 0 30px;
+}
+.content-in-message h4{
+    /* width: ; */
+    padding: 0 10px;
+    line-height: 80px;
+    /* color: red; */
+    height: 80px;
+    background-color: #bad3f5;
+    border-radius: 6px;
+}
+
+.content-in-message span{
+    font-size: 12px;
+}
+.message-right>.content-in-message>h4{
+    background-color: #234b84;
+    color: #f2f3f7;
+    margin-right: 20px;
+    /* width: 100px; */
+}
