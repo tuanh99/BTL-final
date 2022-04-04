@@ -220,11 +220,12 @@ i{
     margin-bottom: 40px;
     animation-name: circle;
     animation-duration: 1s;
-    /* margin: 20px; */
 }
 @keyframes circle {
+    
     from{ background-color: rgb(242, 148, 148);}
     to{ background-color: red;}
+    
 }
 
 
@@ -331,6 +332,6 @@ i{
 .icon-bottom input{
     border: none;
     background-color: rgba(255, 255, 255,0.2) ;
-
+    outline: none;
 
 }
