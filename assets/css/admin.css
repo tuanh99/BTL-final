@@ -214,46 +214,81 @@ i{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+    background-color: #fff;
 	/* background-color: rgb(178, 247, 203); */
-    background: url(../imgs/admin/login.jpg) 100% no-repeat;
+    /* background: url(../imgs/admin/login.jpg) 100% no-repeat; */
 }
 
 .admin_login {
-	background-color: rgba(0,0,0,0.5);
-	width: 400px;
+	background-color: #fff;
+	width: 500px;
 	height: 500px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	position: relative;
     border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px #ccc;
 }
-
-.admin_login label {
+.admin_login img{
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    top:0;
+    border-radius: 6px 6px 0 0;
+}
+/* .admin_login label {
 	font-size: 20px;
 	margin-bottom: 12px;
 	margin-left: 20px;
+} */
+.admin_login h1{
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    /* position: absolute; */
+    /* z-index: 3; */
+    margin: 60px 0 20px 0;
+    text-align: center;
+    color: #001c40;
+    /* animation: img 1s infinite */
 }
-
+/* @keyframes img {
+    from{ color: #06c49b;}
+    to{color: #001c40;}
+} */
 .admin_login input {
 	width: 280px;
-	height: 32px;
-	font-size: 24px;
-	border-radius: 10px;
-	margin-left: 20px;
-	padding-left: 12px;
+	height: 50px;
+	font-size: 20px;
+    margin-bottom: 20px;
+    align-self: center;
+    outline: none;
+    border: 1px solid #ededed;
+    border-radius: 4px;
+    
 }
 
 .admin_login button {
-	width: 100px;
-	padding: 12px 8px;
+	width: 280px;
+    height: 45px;
+	/* padding: 12px 8px; */
 	border-radius: 4px;
 	position: absolute;
+    margin-top: 50px;
 	top: 70%;
 	left: 50%;
 	transform: translateX(-50%);
+    background: #06c49b;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    animation: login_buttom 3s linear infinite 
 }
-
+@keyframes login_buttom {
+    from{ background-color: #06c49b;}
+    to{background-color: #001c40;}
+}
 .admin {
 	display: none;
 }

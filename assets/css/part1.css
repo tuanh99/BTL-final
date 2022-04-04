@@ -212,6 +212,7 @@ span-heart::before {
 	background: url(../imgs/pink_heart.png);
 	background-size: cover;
 	animation: moveShape 1s linear infinite;
+    
 }
 
 @keyframes moveShape {
