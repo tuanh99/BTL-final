@@ -14,6 +14,25 @@ window.addEventListener("scroll", () => {
   }
 });
 
+// ******************/
+let iconToggle = document.querySelector('.icon-toggle')
+let moblie = document.querySelector('.navigate-mobile')
+let icon = false
+
+iconToggle.onclick = () => {
+  // moblie.style.transform = 'translateX(0)'
+  icon =! icon
+  if(icon){
+    moblie.style.transform = 'translateX(0)'
+  }
+  else{
+    moblie.style.transform = 'translateX(150px)'
+  }
+}
+// index.onclick = () => {
+//   moblie.style.transform = 'translateX(150px)'
+// }
+
 
 
 /**************************************************/ 
@@ -27,7 +46,7 @@ header.addEventListener("mousemove", (e) => {
   heart.style.left = x + "px";
   heart.style.top = y + "px";
 
-  let size = Math.random() * 80;
+  let size = Math.random() * 40;
   heart.style.width = 20 + size + "px";
   heart.style.height = 20 + size + "px";
 
