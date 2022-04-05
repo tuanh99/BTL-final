@@ -232,4 +232,10 @@ i{
     from{ background-color: rgb(242, 148, 148);}
     to{ background-color: red;}
 }
+.setting{
+    background-color: #fff;
+}
+.setting>a{
+    color: black;
+}
 
