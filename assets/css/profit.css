@@ -272,19 +272,18 @@ table{
     width: 75%;
     
 }
-tr:nth-child(even) {
-    background-color: #d3d2d1;
-  }
-  table  {
-        border-collapse: collapse;
-  }
-  table, th, td {
+table {
+    border-collapse: collapse;
+    }
+    table, th, td {
     border: 1px solid black;
     }
-    .order{
-        background-color: #fff;
-    }
-    .order>a{
-        color: black;
-    }
-
+    tr:nth-child(even) {
+        background-color: #f09138;
+      }
+.profit{
+    background-color: #fff;
+}
+.profit>a{
+    color: black;
+}
