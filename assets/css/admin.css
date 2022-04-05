@@ -7,6 +7,85 @@
 body{
     min-height: 100vh;
 }
+/* ******************************************************************************* */
+
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    background-color: #fff;
+	/* background-color: rgb(178, 247, 203); */
+    /* background: url(../imgs/admin/login.jpg) 100% no-repeat; */
+}
+
+.admin_login {
+	background-color: #fff;
+	width: 500px;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px #ccc;
+}
+.admin_login img{
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    top:0;
+    border-radius: 6px 6px 0 0;
+}
+.admin_login h1{
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    margin: 60px 0 20px 0;
+    text-align: center;
+    color: #001c40;
+}
+.admin_login input {
+	width: 280px;
+	height: 50px;
+	font-size: 20px;
+    margin-bottom: 20px;
+    align-self: center;
+    outline: none;
+    border: 1px solid #ededed;
+    border-radius: 4px;    
+}
+
+.admin_login button {
+	width: 280px;
+    height: 45px;
+	border-radius: 4px;
+	position: absolute;
+    margin-top: 50px;
+	top: 70%;
+	left: 50%;
+	transform: translateX(-50%);
+    background: #06c49b;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    animation: login_buttom 3s linear infinite 
+}
+@keyframes login_buttom {
+    from{ background-color: #06c49b;}
+    to{background-color: #001c40;}
+}
+.admin {
+	/* display: block; */
+}
+/* ******************************************************************************* */
+
 a{
     text-decoration: none;
 }
@@ -21,13 +100,18 @@ li a{
 h1,h2{
     color: rgb(252, 96, 13)
 }
+.admin{
+    display: flex;
+    /* width: 100vw; */
+}
 .slide-menu{
-    position: fixed;
+    /* position: fixed; */
     background-color: #001c40;
-    width: 20vw;
+    width: 18%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    /* border: 5px solid #06c49b; */
 }
 .slide-menu .brand-name{
     height: 10vh;
@@ -35,12 +119,12 @@ h1,h2{
     align-items: center;
     justify-content: center;
 }
-.slide-menu li{
+.slide-menu li {
     font-size: 24px;
-    padding: 10px 40px;
+    padding: 10px 30px;
     color: #fff;
     display: flex;
-    align-items: center;
+    align-content: center;
 }
 .slide-menu li:hover{
     background-color: #ccc;
@@ -66,23 +150,25 @@ svg{
     width: 30px;
     height: 30px;
 }
+
+/* ********** Wrap-body *********** */
+
 .container{
-    position: absolute;
+    /* position: absolute; */
     right: 0;
-    /* position: relative; */
-    /* right: 0; */
-    width: 80vw;
-    height: 100vh;
+    width: 82%;
+    /* height: 100vh; */
     background: rgba(188, 183, 183, 0.2);
 }
 .container .header{
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     right: 0;
-    width: 80vw;
+    width: 100%;
     height: 10vh;
     background: #fff;
     display: flex;
+    /* border: 1px solid #000; */
 }
 i{
     color: rgb(252, 96, 13);
@@ -90,11 +176,8 @@ i{
 }
 .header .nav{
     display: flex;
-    /* justify-self: center; */
     align-items: center;
     justify-content: space-between;
-    
-    
     width: 100%;
 }
 .nav svg{
@@ -134,35 +217,39 @@ i{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* position: relative; */
-    /* right: 0; */
     width: 100px;
     background: rgba(188, 183, 183, 0.2);
-    
     height: 46px;
     border: 1px solid #001c40;
-
     border-radius: 6px;
     margin-right: 30px;
 
 }
+
+/* ********* container-body ************* */
+
+.container-body{
+    /* margin: 25px 0; */
+    /* height: 90vh; */
+}
+
 .box{
     display: flex;
-    position: relative;
-    top: 100px;
+    flex-wrap: wrap;
+    margin-top: 15px;
     justify-content: space-around;
     align-items: center;
     width: 80vw;
-    height: 20vh;
+    /* height: 20vh; */
     
 }
 .box .box-item{
     display: flex;
+    margin-top: 10px;
     justify-content: space-around;
     align-items: center;
-    width: 16vw;
-    height: 100%;
-    /* border: 1px solid #001c40; */
+    width: 250px;
+    height: 140px;
     background-color: #fff;
     border-radius: 6px;
     box-shadow: 2px 2px 2px 2px rgba(123, 121, 121, 0.2);
@@ -200,108 +287,22 @@ i{
     color: #555
 }
 
-
-/* ******************************************************************************* */
-
-
-.overlay {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 999;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-    background-color: #fff;
-	/* background-color: rgb(178, 247, 203); */
-    /* background: url(../imgs/admin/login.jpg) 100% no-repeat; */
+.report{
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
-
-.admin_login {
-	background-color: #fff;
-	width: 500px;
-	height: 500px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	position: relative;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px 5px #ccc;
-}
-.admin_login img{
-    width: 500px;
-    height: 150px;
-    position: absolute;
-    top:0;
-    border-radius: 6px 6px 0 0;
-}
-/* .admin_login label {
-	font-size: 20px;
-	margin-bottom: 12px;
-	margin-left: 20px;
-} */
-.admin_login h1{
-    height: 50px;
-    line-height: 50px;
-    font-size: 30px;
-    /* position: absolute; */
-    /* z-index: 3; */
-    margin: 60px 0 20px 0;
-    text-align: center;
-    color: #001c40;
-    /* animation: img 1s infinite */
-}
-/* @keyframes img {
-    from{ color: #06c49b;}
-    to{color: #001c40;}
-} */
-.admin_login input {
-	width: 280px;
-	height: 50px;
-	font-size: 20px;
-    margin-bottom: 20px;
-    align-self: center;
-    outline: none;
-    border: 1px solid #ededed;
-    border-radius: 4px;
-    
-}
-
-.admin_login button {
-	width: 280px;
-    height: 45px;
-	/* padding: 12px 8px; */
-	border-radius: 4px;
-	position: absolute;
-    margin-top: 50px;
-	top: 70%;
-	left: 50%;
-	transform: translateX(-50%);
-    background: #06c49b;
-    border: none;
-    color: #fff;
-    font-size: 20px;
-    animation: login_buttom 3s linear infinite 
-}
-@keyframes login_buttom {
-    from{ background-color: #06c49b;}
-    to{background-color: #001c40;}
-}
-.admin {
-	display: none;
-}
-/* ******************************************************************************* */
-
+/* ************ recent-orders */
 .recent-orders{
     /* position: absolute; */
-    position: fixed;
+    /* position: relative; */
     top: 280px;
-    margin-left: 32px;
+    margin: 10px 0 0 32px;
     /* left: 32px; */
-    width: 50vw;
-    height: 58vh;
+    width: 760px;
+    height: 425px;
     background-color: #fff;
     border-radius: 6px;
     box-shadow: 2px 2px 2px 2px rgba(123, 121, 121, 0.2);
@@ -326,12 +327,12 @@ i{
 
 /* ************************************** */
 .new-customers{
-    position: fixed;
+    /* position: fixed; */
     top: 280px;
     right: 0;
-    margin-right: 32px;
-    width: 24vw;
-    height: 58vh;
+    margin: 10px 32px;
+    width: 360px;
+    height: 430px;
     background-color: #fff;
     box-shadow: 2px 2px 2px 2px rgba(123, 121, 121, 0.2);
     border-radius: 6px;
@@ -345,6 +346,7 @@ i{
     /* font-family: Verdana,sans-serif; */
     font-size: 22px;
     font-weight: 600;
+    margin: 5px 0;
 }
 .avt-customer img{
     width: 38px;
@@ -353,4 +355,21 @@ i{
 }
 .new-customers td{
     padding: 6px
+}
+
+
+
+/* ************* responsive ***********/
+@media (max-width: 966px){
+    .slide-menu{
+        width: 175px;
+    }
+    .report{
+        display: flex;
+        flex-direction: column;
+    }
+    .recent-orders{
+        margin-left: 10px;
+        width: 550px;
+    }
 }
