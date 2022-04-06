@@ -151,7 +151,7 @@ i{
 
 /* **************************Container-body************************* */
 .container-body{
-    margin: 15px 0;
+    margin: 10px 0;
 }
 
 .box{
@@ -194,24 +194,27 @@ i{
 /* ****************** Big-box ************* */
 .big-box{
     display: flex;
-    margin-top: 10px;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    /* border: 1px solid rgb(48, 209, 51); */
+
 }
 
 /******************** profile **************** */
 .profile{
     display: flex;
-    left:0;
-    width: 70%;
+    /* border: 1px solid rgb(59, 48, 209); */
+
+    width: 74%;
     flex-wrap: wrap;
     text-align: center;
     justify-content: space-around;
-    /* border-radius: 6px; */
-    /* border: 1px dashed #000; */
+    /* margin-left: -8%; */
 }
 .profile-item{
     text-align: center;
     width: 200px;
-    /* border: 1px solid #000; */
+    /* border: 1px solid rgb(209, 48, 48); */
     margin: 10px;
     height: 225px;
     border-radius: 6px;
@@ -254,21 +257,22 @@ i{
 /* **************** new-customer */
 
 .new-customers{
+    /* border: 1px solid #000; */
     /* position: fixed; */
-    top: 280px;
-    right: 0;
-    margin: 10px 25px;
-    width: 380px;
-    height: 450px;
+    margin: 10px 15px;
+    width: 23%;
+    /* width: 380px; */
+    /* height: 100vh; */
+    min-width: 245px;
     background-color: #fff;
     box-shadow: 2px 2px 2px 2px rgba(123, 121, 121, 0.2);
     border-radius: 6px;
+    /* padding: 10px; */
 }
 .new-customers table{
-    width: 100%;
-    margin: 10px 100px 10px 10px; 
-    padding-right: 10px;
-    
+    /* width: 100%; */
+    /* margin: 10px 100px 10px 10px;  */
+    padding-right: 10px
 }
 .new-customers table caption{
     /* font-family: Verdana,sans-serif; */
@@ -283,4 +287,35 @@ i{
 }
 .new-customers td{
     padding: 6px
+}
+
+/* *************** load-more ************* */
+.container .load-more{
+    text-align: center;
+    /* margin-bottom: 10px; */
+}
+
+/* ************* responsive ***********/
+@media (max-width: 966px){
+    .slide-menu{
+        width: 175px;
+    }
+}    
+    /* .report{
+        display: flex;
+        flex-direction: column;
+    } */
+    /* .profile{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+    } */
+@media(max-width:1265px){
+    .new-customers{
+        width: 290px;
+    }
+}
+@media(max-width: 540px){
+
 }
