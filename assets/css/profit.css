@@ -210,28 +210,28 @@ i{
 }
 /* ******************************************************************************* */
 
-.recent-orders{
+.recent-profit{
     /* position: absolute; */
     position: fixed;
-    top: 280px;
+    top: 120px;
     margin-left: 430px;
     /* left: 32px; */
     width: 50vw;
-    height: 58vh;
+    height: 60vh;
     background-color: #fff;
     border-radius: 6px;
     box-shadow: 2px 2px 2px 2px rgba(123, 121, 121, 0.2);
 }
-.recent-orders table{
+.recent-profit table{
     margin: 10px;
     width: 100%
 }
-.recent-orders table caption{
+.recent-profit table caption{
     margin-bottom: 10px;
     font-size: 22px;
     font-weight: 600;
 }
-.recent-orders table th,td{
+.recent-profit table th,td{
     padding: 10px;
 }
 
@@ -268,7 +268,7 @@ th, td {
 table{
     width: 150%;
 }
-.recent-orders{
+.recent-profit{
     width: 75%;
     
 }
