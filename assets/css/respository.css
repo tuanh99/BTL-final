@@ -195,7 +195,7 @@ i{
 .big-box{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 5px;
+    margin-top: 10px;
     /* border: 1px solid rgb(48, 209, 51); */
 
 }
@@ -215,7 +215,7 @@ i{
     text-align: center;
     width: 200px;
     /* border: 1px solid rgb(209, 48, 48); */
-    margin: 10px;
+    margin: 10 10px 5px 10pxpx;
     height: 225px;
     border-radius: 6px;
     background-color: #fff;
@@ -261,6 +261,7 @@ i{
     /* position: fixed; */
     margin: 10px 15px;
     width: 23%;
+    height: 100%;
     /* width: 380px; */
     /* height: 100vh; */
     min-width: 245px;
@@ -292,7 +293,24 @@ i{
 /* *************** load-more ************* */
 .container .load-more{
     text-align: center;
-    /* margin-bottom: 10px; */
+    margin-top: 10px;
+}
+.container .load-more button{
+    width: 100px;
+    height: 35px;
+    background-color: #1fee9b;
+    /* animation-name: loadmore; */
+    animation: loadmore  2s linear infinite;
+    transition: all 1s ;
+    border-radius: 6px;
+    /* outline: none; */
+    border: none;
+    cursor: pointer;
+
+}
+@keyframes loadmore {
+    from{ background-color: #1fee9b;}
+    to{ background-color:#8b83f0;}
 }
 
 /* ************* responsive ***********/
