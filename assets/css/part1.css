@@ -176,7 +176,7 @@ body{
 
 #header {
     height: 100vh;
-    background: url('../imgs/header.jpg') top center / 100% no-repeat;
+    background: url('../imgs/header1.jpg') top center / 100% no-repeat;
     position: relative;
 
 
@@ -234,7 +234,7 @@ span-heart::before {
     /* position: relative; */
     top: 0;
     right: 0;
-    bottom: 0;
+    /* bottom: 0; */
     left: 0;
     background-color: rgba(23, 23, 38, 0.6);
     /* min-width: 900px; */
@@ -242,9 +242,13 @@ span-heart::before {
 }
 
 .header_content {
-    position: absolute;
-    
-    color: #fff;
+    position: relative;
+    /* border: 1px solid #fff; */
+    width: 570px;
+    height: 330px;
+    /* background-color: rgba(0,0,0,0.5); */
+    border-radius: 6px;
+    color: #f7dade;
     text-align: center;
     /* justify-content: center; */
     align-items: center;

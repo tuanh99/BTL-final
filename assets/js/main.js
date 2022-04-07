@@ -5,7 +5,7 @@ window.addEventListener("scroll", () => {
   var kcach = window.scrollY;
   if (kcach >= 100) {
     nav_link.forEach((item) => (item.style.color = "#000"));
-    nav.style.backgroundColor = "#fff";
+    nav.style.backgroundColor = "#f7dade";
     logo.style.color = "#000";
   } else {
     nav_link.forEach((item) => (item.style.color = "#fff"));
