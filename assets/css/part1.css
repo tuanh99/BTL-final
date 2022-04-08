@@ -79,18 +79,9 @@ body{
     position: relative;
     z-index: 2000;
     box-shadow: 3px 3px 3px 3px rgba(255,255,255,0.5);
-    border-radius: 5px
-    /* animation: 2s infinite; */
-    /* animation-name: icon_toggle; */
-    
+    border-radius: 5px   
 
 }
-/* @keyframes icon_toggle {
-    
-    from{ background-color: rgb(242, 148, 148);}
-    to{ background-color: #fff;}
-    
-} */
 .navigate {
     margin-right: 40px;
     /* display: ; */

@@ -20,8 +20,7 @@ let moblie = document.querySelector('.navigate-mobile')
 let icon = false
 
 iconToggle.onclick = () => {
-  // moblie.style.transform = 'translateX(0)'
-  icon =! icon
+  icon=!icon
   if(icon){
     moblie.style.transform = 'translateX(0)'
   }
@@ -29,15 +28,13 @@ iconToggle.onclick = () => {
     moblie.style.transform = 'translateX(150px)'
   }
 }
-// index.onclick = () => {
-//   moblie.style.transform = 'translateX(150px)'
-// }
+
 
 
 
 /**************************************************/ 
 
-var header = document.querySelector("#header");
+let header = document.querySelector("#header");
 
 header.addEventListener("mousemove", (e) => {
   let heart = document.createElement("span-heart");

@@ -143,16 +143,13 @@ svg{
     height: 30px;
 }
 
-/* ********** Wrap-body *********** */
+/************************** container ***************** */
 
 .container{
-    right: 0;
     width: 82%;
     background: rgba(188, 183, 183, 0.2);
 }
 .container .header{
-    top: 0;
-    right: 0;
     width: 100%;
     height: 10vh;
     background: #fff;
@@ -232,7 +229,6 @@ i{
     margin-top: 10px;
     justify-content: space-around;
     align-items: center;
-    
     width: 35vh;
     min-width: 200px;
     height: 120px;
@@ -275,14 +271,14 @@ i{
     font-weight: 400;
     color: #555
 }
-/*- ************** report **************/
-.reports{
+/*- ************** big-box **************/
+.big-box{
     margin-top: 15px;
     display: flex;
     flex-wrap: wrap;
 }
 /* ************- recent-orders */
-.reports .recent-orders{
+.big-box .recent-orders{
     margin: 10px 20px 0 20px;
     
     width: 42vw;
@@ -349,13 +345,33 @@ i{
     animation: login_buttom 2s linear infinite 
     
 }
-
-
+.slide-menu-moblie{
+    display: none;
+    padding: 10px 0;
+    margin-top: 20vh;
+    background-color: rgba(0, 28, 64,0.6);
+    position: fixed;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: all 0.3s linear;
+}
+.icon-arrow-right{
+    display: none;
+    cursor: pointer;
+    z-index: 2;
+    position: fixed;
+    transition: all 0.3s linear;
+}
 /*- ************* responsive ***********/
 @media (max-width: 1070px){
     .slide-menu{
         display: none;
-        width: 175px;
+    }
+    .slide-menu-moblie {
+        display: block;
+    }
+    .icon-arrow-right{
+        display: block;
     }
     .container{
         width: 100%;
@@ -364,7 +380,7 @@ i{
     .box{
         width: 100%;
     }
-    .reports{
+    .big-box{
         width: 100%;
         justify-content: center;
     }
