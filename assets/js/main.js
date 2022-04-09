@@ -2,8 +2,8 @@ var nav = document.querySelector(".nav");
 var logo = document.querySelector(".fwedding");
 var nav_link = document.querySelectorAll(".nav-link");
 window.addEventListener("scroll", () => {
-  var kcach = window.scrollY;
-  if (kcach >= 100) {
+  var height = window.scrollY;
+  if (height >= 100) {
     nav_link.forEach((item) => (item.style.color = "#000"));
     nav.style.backgroundColor = "#f7dade";
     logo.style.color = "#000";
@@ -14,7 +14,8 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// ******************/
+/**************************//- navigate mobile//************************/ 
+
 let iconToggle = document.querySelector('.icon-toggle')
 let moblie = document.querySelector('.navigate-mobile')
 let icon = false
@@ -28,11 +29,7 @@ iconToggle.onclick = () => {
     moblie.style.transform = 'translateX(150px)'
   }
 }
-
-
-
-
-/**************************************************/ 
+/**************************//-animaiton heart//************************/ 
 
 let header = document.querySelector("#header");
 
@@ -57,7 +54,7 @@ header.addEventListener("mousemove", (e) => {
   }, 1000);
 });
 
-/**************************************************/ 
+/**************************//- icon music//************************/ 
 let iconMusic= document.querySelector('.icon-music')
 let perfectMusic= document.querySelector('.perfect-music')
 let isPlay = false

@@ -7,7 +7,7 @@
 body{
     min-height: 100vh;
 }
-/* ******************************************************************************* */
+/* *************************************Login****************************************** */
 
 
 .overlay {
@@ -79,7 +79,7 @@ body{
     from{ background-color: #06c49b;}
     to{background-color: #001c40;}
 }
-/* ******************************************************************************* */
+/* ******************************************Admin************************************* */
 
 a{
     text-decoration: none;
@@ -132,6 +132,26 @@ h1,h2{
     justify-content: center;
 
 }
+
+.slide-menu-mobile{
+    display: none;
+    padding: 10px 0;
+    margin-top: 20vh;
+    /* background-color: rgba(0, 28, 64,0.6); */
+    position: fixed;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: all 0.3s linear;
+}
+.icon-arrow-right{
+    display: none;
+    cursor: pointer;
+    z-index: 2;
+    position: fixed;
+    color: #fc610dbd ;
+    transition: all 0.3s linear;
+}
+
 .dashboard{
     background-color: #fff;
 }
@@ -345,29 +365,12 @@ i{
     animation: login_buttom 2s linear infinite 
     
 }
-.slide-menu-moblie{
-    display: none;
-    padding: 10px 0;
-    margin-top: 20vh;
-    background-color: rgba(0, 28, 64,0.6);
-    position: fixed;
-    z-index: 2;
-    transform: translateX(-100%);
-    transition: all 0.3s linear;
-}
-.icon-arrow-right{
-    display: none;
-    cursor: pointer;
-    z-index: 2;
-    position: fixed;
-    transition: all 0.3s linear;
-}
 /*- ************* responsive ***********/
 @media (max-width: 1070px){
     .slide-menu{
         display: none;
     }
-    .slide-menu-moblie {
+    .slide-menu-mobile {
         display: block;
     }
     .icon-arrow-right{
@@ -375,7 +378,6 @@ i{
     }
     .container{
         width: 100%;
-        
     }
     .box{
         width: 100%;
