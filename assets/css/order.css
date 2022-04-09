@@ -157,8 +157,8 @@ i{
     box-shadow: 2px 2px 2px 2px rgba(123, 121, 121, 0.2);
     margin: 10px;
     padding: 10px 0;
-    width: 400px;
-    height: 100px;
+    width: 325px;
+    height: 85px;
     background: #fff;
 }
 .box-item:hover{
@@ -309,11 +309,11 @@ i{
 .recent-orders{
     /* position: absolute; */
     position: fixed;
-    top: 250px;
+    top: 200px;
     margin-left: 10px;
     /* left: 32px; */
-    width: 50vw;
-    height: 58vh;
+    width: 55vw;
+    height: 70vh;
     background-color: #fff;
     border-radius: 6px;
     box-shadow: 2px 2px 2px 2px rgba(123, 121, 121, 0.2);
@@ -359,4 +359,43 @@ tr:nth-child(even) {
     }
     .order>a{
         color: black;
+    }
+    .slide-menu{
+        background-color: #001c40;
+        width: 18%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .slide-menu .brand-name{
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .slide-menu li {
+        font-size: 24px;
+        padding: 10px 30px;
+        color: #fff;
+        display: flex;
+        align-content: center;
+    }
+    .slide-menu li:hover{
+        background-color: #ccc;
+        color: #001c40;
+    }
+    .slide-menu li:hover>a{
+        color: #001c40;
+    }
+    .slide-menu.dashboard{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .header .nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
     }
