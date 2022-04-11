@@ -81,6 +81,9 @@ svg{
     display: flex;
 }
 i{
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
     color: rgb(252, 96, 13);
 }
 .header .nav{

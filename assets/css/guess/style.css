@@ -526,12 +526,10 @@ ol{
     /* display: flex; */
 }
 .form-group label{
-    position: relative;
-   color: #fff;
+    /* position: relative; */
+    color: #fff !important;
     font-weight: 700;
     top: 10px;
-
-    
 }
 .form-group input{
     width: 300px;
@@ -541,6 +539,11 @@ ol{
     outline-style: none;
     border: none;
     margin: 10px;
+}
+.form-group span{
+    position: absolute;
+    color: #fff;
+    background-color: #000;
 }
 
 .form-group .attending-bg-white{
@@ -559,21 +562,27 @@ ol{
     /* top: 30px; */
     margin: 10px;
     background-color: #fff;
-    color: black;
+    color: black !important;
     border-radius: 5px;
 }
 .form-group small{
    color: #fff;
    /* margin-top: 10px ; */
     font-weight: 700;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .submit {
     background-color: rgb(226, 93, 93);
     color: #fff;   
-    margin: 20px 0 10px 0;
+    width: 300px;
+    margin: 20px 0 0 50px;
     border: none;
-    
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
 
 }
 .submit:hover{

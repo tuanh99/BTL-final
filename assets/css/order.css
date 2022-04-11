@@ -23,7 +23,7 @@ li a{
 h1,h2{
     color: rgb(252, 96, 13)
 }
-.admin{
+#order{
     display: flex;
     /* width: 100vw; */
 }
@@ -56,33 +56,31 @@ h1,h2{
 .slide-menu li:hover>a{
     color: #001c40;
 }
+.order{
+    background-color: #fff;
+}
+.order>a{
+    color: #001c40;
+}
 svg{
     width: 30px;
     height: 30px;
 }
-
 /* ********** Wrap-body *********** */
 
+
 .container{
-    /* position: absolute; */
-    right: 0;
     width: 82%;
-    /* height: 100vh; */
     background: rgba(188, 183, 183, 0.2);
 }
 .container .header{
-    /* position: fixed; */
-    top: 0;
-    right: 0;
-    width: 100%;
+    /* width: 100%; */
     height: 10vh;
     background: #fff;
     display: flex;
-    /* border: 1px solid #000; */
 }
 i{
     color: rgb(252, 96, 13);
-    
 }
 .header .nav{
     display: flex;
@@ -113,14 +111,11 @@ i{
 .nav .search input{
     border: none;
     outline: none;
-    /* color: rgba(188, 183, 183, 0.2); */
     background: rgba(188, 183, 183, 0.025);
     width: 80%;
     height: 100%;
     line-height: 30px;
     margin-left: 10px;
-    /* height: 100%;
-    width: 100%; */
 }
 
 .nav .user{
@@ -136,11 +131,34 @@ i{
 
 }
 
-/* **************************Container-body************************* */
-.container-body{
-    margin: 10px 0;
+.slide-menu-mobile{
+    display: none;
+    padding: 10px 0;
+    margin-top: 20vh;
+    /* background-color: rgba(0, 28, 64,0.6); */
+    position: fixed;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: all 0.3s linear;
+}
+.icon-arrow-right{
+    display: none;
+    cursor: pointer;
+    z-index: 2;
+    position: fixed;
+    color: #fc610dbd ;
+    transition: all 0.3s linear;
 }
 
+/* **************************Container-body************************* */
+.container-body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.container-body{
+    /* margin: 10px 0; */
+}
 .box{
     display: flex ;
     flex-wrap: wrap;
@@ -155,14 +173,15 @@ i{
     /* border: 1px solid #ccc ; */
     border-radius: 6px;
     box-shadow: 2px 2px 2px 2px rgba(123, 121, 121, 0.2);
-    margin: 10px;
+    /* margin: 10px; */
     padding: 10px 0;
     width: 325px;
     height: 85px;
+    margin: 20px 0;
     background: #fff;
 }
 .box-item:hover{
-    transform: translateY(-10px);
+    transform: translateY(-5px);
     transition: all 0.2s linear;
 }
 .box-item .icon svg{
@@ -240,86 +259,27 @@ i{
     justify-content: space-around;
 }
 
-
-/* **************** new-customer */
-
-.new-customers{
-    /* border: 1px solid #000; */
-    /* position: fixed; */
-    margin: 10px 15px;
-    width: 23%;
-    /* width: 380px; */
-    /* height: 100vh; */
-    min-width: 245px;
-    background-color: #fff;
-    box-shadow: 2px 2px 2px 2px rgba(123, 121, 121, 0.2);
-    border-radius: 6px;
-    /* padding: 10px; */
-}
-.new-customers table{
-    /* width: 100%; */
-    /* margin: 10px 100px 10px 10px;  */
-    padding-right: 10px
-}
-.new-customers table caption{
-    /* font-family: Verdana,sans-serif; */
-    font-size: 22px;
-    font-weight: 600;
-    margin: 5px 0;
-}
-.avt-customer img{
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-}
-.new-customers td{
-    padding: 6px
-}
-
-/* *************** load-more ************* */
-.container .load-more{
-    text-align: center;
-    /* margin-bottom: 10px; */
-}
-
 /* ************* responsive ***********/
 @media (max-width: 966px){
     .slide-menu{
         width: 175px;
     }
 }    
-    /* .report{
-        display: flex;
-        flex-direction: column;
-    } */
-    /* .profile{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        justify-items: center;
-    } */
-@media(max-width:1265px){
-    .new-customers{
-        width: 290px;
-    }
-}
-@media(max-width: 540px){
+    
 
-}
 .recent-orders{
-    /* position: absolute; */
-    position: fixed;
-    top: 200px;
     margin-left: 10px;
+
     /* left: 32px; */
-    width: 55vw;
-    height: 70vh;
+    width: 70vw;
+    min-width: 490px;
+    /* height: 70vh; */
     background-color: #fff;
     border-radius: 6px;
     box-shadow: 2px 2px 2px 2px rgba(123, 121, 121, 0.2);
 }
 .recent-orders table{
-    margin: 10px;
+    /* margin: 10px; */
     width: 100%
 }
 .recent-orders table caption{
@@ -339,11 +299,7 @@ th, td {
     padding: 15px;
 }
 table{
-    width: 150%;
-}
-.recent-orders{
-    width: 75%;
-    
+    width: 72%;
 }
 tr:nth-child(even) {
     background-color: #d3d2d1;

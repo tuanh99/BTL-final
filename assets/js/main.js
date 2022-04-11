@@ -67,4 +67,36 @@ iconMusic.addEventListener('click', () =>{
 })
 
 
+/**************************************************************/ 
+const fullname = document.querySelector('#your-name')
+const email = document.querySelector('#email')
+const regexName = /^[a-zA-Z]+$/
+const regexEmail =/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+fullname.onblur = () => {
+  const valueName = fullname.value.trim()
+  if (regexName.test(valueName) && valueName.length > 5) {
+    document.querySelectorAll('.form-group span')[0].textContent = ''
+  } else {
+    document.querySelectorAll('.form-group span')[0].textContent =
+      'Vui lòng nhập chữ và không nhỏ hơn 5 kí tự'
+  }
+}
+
+email.onblur = () => {
+  const valueEmail = email.value.trim()
+  if (regexEmail.test(valueEmail)) {
+    document.querySelectorAll('.form-group span')[1].textContent = ''
+  } else {
+    document.querySelectorAll('.form-group span')[1].textContent = 'Vui lòng nhập đúng email'
+  }
+}
+let attendingY = document.querySelector('.attending-yes')
+let attendingN = document.querySelector('.attending-no')
+
+let submit = document.querySelector('.submit')
+submit.onclick = () =>{
+  fullname.value = ''
+  email.value = ''
+
+}
 
