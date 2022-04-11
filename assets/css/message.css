@@ -325,11 +325,6 @@ i{
 
 }
 
-
-
-
-
-
 @media (max-width: 1070px){
     .slide-menu{
         display: none;
@@ -343,24 +338,9 @@ i{
     .container{
         width: 100%;
     }
-    
     .container-body{
         width: 100%;
     }
-    .box{
-        width: 100%;
-    }
-    .big-box{
-        width: 100%;
-        justify-content: center;
-    }
     
-    .profile{
-        width: 100%;
-        justify-content: center;
-    }
-    .profile-item{
-        margin: 0 10px 10px 0;
-    }
 }    
     

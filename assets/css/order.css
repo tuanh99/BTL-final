@@ -130,31 +130,12 @@ i{
     margin-right: 30px;
 
 }
-
-.slide-menu-mobile{
-    display: none;
-    padding: 10px 0;
-    margin-top: 20vh;
-    /* background-color: rgba(0, 28, 64,0.6); */
-    position: fixed;
-    z-index: 2;
-    transform: translateX(-100%);
-    transition: all 0.3s linear;
-}
-.icon-arrow-right{
-    display: none;
-    cursor: pointer;
-    z-index: 2;
-    position: fixed;
-    color: #fc610dbd ;
-    transition: all 0.3s linear;
-}
-
 /* **************************Container-body************************* */
 .container-body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    /* width: 82%; */
 }
 .container-body{
     /* margin: 10px 0; */
@@ -202,14 +183,12 @@ i{
     display: flex;
     flex-wrap: wrap;
     margin-top: 5px;
-    /* border: 1px solid rgb(48, 209, 51); */
 
 }
 
 /******************** profile **************** */
 .profile{
     display: flex;
-    /* border: 1px solid rgb(59, 48, 209); */
 
     width: 74%;
     flex-wrap: wrap;
@@ -260,17 +239,25 @@ i{
 }
 
 /* ************* responsive ***********/
-@media (max-width: 966px){
+@media (max-width: 1070px){
     .slide-menu{
-        width: 175px;
+        display: none;
     }
-}    
+    .slide-menu-mobile {
+        display: block;
+    }
+    .icon-arrow-right{
+        display: block;
+    }
+    .container{
+        width: 100%;
+    }
+
     
+}
 
 .recent-orders{
     margin-left: 10px;
-
-    /* left: 32px; */
     width: 70vw;
     min-width: 490px;
     /* height: 70vh; */
@@ -315,43 +302,4 @@ tr:nth-child(even) {
     }
     .order>a{
         color: black;
-    }
-    .slide-menu{
-        background-color: #001c40;
-        width: 18%;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-    }
-    .slide-menu .brand-name{
-        height: 10vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .slide-menu li {
-        font-size: 24px;
-        padding: 10px 30px;
-        color: #fff;
-        display: flex;
-        align-content: center;
-    }
-    .slide-menu li:hover{
-        background-color: #ccc;
-        color: #001c40;
-    }
-    .slide-menu li:hover>a{
-        color: #001c40;
-    }
-    .slide-menu.dashboard{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
-    }
-    .header .nav{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
     }

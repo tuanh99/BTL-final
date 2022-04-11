@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Serif+Pro&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Miniver&family=Playfair+Display&family=Source+Serif+Pro&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -170,7 +169,9 @@ body{
 /* !Xem lại code*/
 /*Animated Pink Heart */
 span-heart {
+    
 	position: absolute;
+    z-index: 9999;
 	pointer-events: none;
 	filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
 	animation: fadeInOut 1s linear infinite;
@@ -192,7 +193,7 @@ span-heart::before {
 	content: '';
 	width: 100%;
 	height: 100%;
-	background: url(../imgs/pink_heart.png);
+	background: url(../../imgs/pink_heart.png);
 	background-size: cover;
 	animation: moveShape 1s linear infinite;
     
@@ -339,7 +340,61 @@ button:hover {
     width: 400px ;
 
 }
+
+/* ******************** love story ************************ */
 #love-story{
+    text-align: center;
+}
+#love-story .our-love-story h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+#love-story .our-love-story .the-story-of{
+    font-size: 16px;
+    padding: 0 0 20px 0;
+    
+    color: #222;
+    
+    font-size: 14.5px;
+    font-weight: 600;
+    opacity: .8;
+}
+.text-in-love-story h5{
+    font-size: 20px;
+}
+.text-in-love-story span{
+    font-size: 14.5px;
+    font-weight: 600;
+    /* opacity: ; */
+}
+.milestone{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.milestone-item{
+    width: 400px;
+}
+.content-inner-milestone{
+    text-align: center;
+    font-size: 16px;
+    height: 300px;
+    padding: 40px 30px 0 30px;
+    background-color: rgba(226, 111, 34, 0.068);
+
+}
+.content-inner-milestone h3,
+.content-inner-milestone span{
+    font-family: 'Miniver';
+}
+
+.milestone-item img{
+    width: 400px;
+    height: 300px
+}
+
+/* #love-story{
    
     position: relative;
     z-index: 5;
@@ -379,7 +434,6 @@ ol{
     opacity: .8;
 }
 #love-story .love-story-img img{
-    /* width: 22%; */
     width: 230px;
     height: 200px;
     padding: 40px 40px;
@@ -403,7 +457,7 @@ ol{
     color: #e35d5d;
     font-weight: 600;
     
-}
+} */
 
 
 

@@ -331,14 +331,29 @@ i{
 
 /*- ******************** recent-review****************** */
 .recent-reviews{
-    background-color: #fff;
+    /* background-color: #fff; */
     width: 33vw;
     min-width: 356px;
     margin: 10px 20px 0 0px;
     border-radius: 6px;
     box-shadow: 2px 2px 2px 2px rgba(123, 121, 121, 0.2);
+    overflow-x: hidden;
 
 }
+.recent-reviews table{
+    background-color: #fff;
+    animation: table 1s linear;
+}
+/* @keyframes table{
+    0%{
+        transform: translateX(30%);
+        opacity: 0.5;
+    }
+    100%{
+        transform:  translateX(0);
+        opacity: 1;
+    }
+} */
 .recent-reviews table caption{
     margin-top: 10px;
     font-size: 22px;
