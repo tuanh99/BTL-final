@@ -257,7 +257,6 @@ button {
     letter-spacing: 4px; /* khoảng cách giữa các chữ*/
     text-decoration: none; /*bỏ gạch chân*/
     font-size: 24px;
-    /* overflow: hidden;  */
     transition: 0.2s;
 }
 
@@ -283,11 +282,10 @@ button:hover {
     margin-top: 60px;
     display: flex;
     justify-content: center;
-    padding: 96px 15px;
+    padding: 40px 15px;
     margin: 0 69px;
     align-items: center;
     box-sizing: border-box;
-    height: 100vh;
     flex-wrap: wrap;
 
 }
@@ -324,16 +322,13 @@ button:hover {
     line-height: 1.7;
     color: #7c7e7f;
     font-family: 'Source Sans Pro', Verdana, Geneva, Tahoma, sans-serif;
-    margin-bottom: 24px;
     padding-right:32px ;
-    /* box-sizing: border-box; */
 
 
 }
 .date-img {
     flex: 1;
     padding: 15px 15px;
-    /* display: flex; */
 }
 
 .date-img img {
@@ -365,6 +360,7 @@ button:hover {
 .text-in-love-story span{
     font-size: 14.5px;
     font-weight: 600;
+    /* color: rgb(222, 38, 47); */
     /* opacity: ; */
 }
 .milestone{
@@ -381,85 +377,23 @@ button:hover {
     font-size: 16px;
     height: 300px;
     padding: 40px 30px 0 30px;
-    background-color: rgba(226, 111, 34, 0.068);
-
+    background-color: #e26f2211;
 }
 .content-inner-milestone h3,
 .content-inner-milestone span{
     font-family: 'Miniver';
+    font-size: 20px;
 }
-
+.content-inner-milestone span{
+    color: rgb(47, 30, 12);
+}
+.content-inner-milestone h3{
+    font-weight: 600;
+}
 .milestone-item img{
     width: 400px;
     height: 300px
 }
-
-/* #love-story{
-   
-    position: relative;
-    z-index: 5;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    justify-items: center;
-    background-color: #fff9f5;
-    width: 100%;
-    padding: 65px;
-}
-
-ol{
-    list-style-type: none;
-}
-
-#love-story .our-love-story h1{
-    font-size: 51.2px;
-    font-weight: 400;
-}
-#love-story .our-love-story .the-story-of{
-    font-size: 16px;
-    padding: 0 0 30px 0;
-    
-    color: #222;
-    
-    font-size: 14.5px;
-    font-weight: 600;
-    opacity: .8;
-}
-.text-in-love-story h5{
-    font-size: 20px;
-}
-.text-in-love-story span{
-    font-size: 14.5px;
-    font-weight: 600;
-    opacity: .8;
-}
-#love-story .love-story-img img{
-    width: 230px;
-    height: 200px;
-    padding: 40px 40px;
-}
-.love-story-icon-and-date{
-    display: flex;
-    flex-direction: column;
-}
-
- .bg-icon-heart svg{
-
-    width: 20px;
-    height: 20px;
-}
-.icon-and-date .text h5{
-    font-size: 20px;
-
-}
-.icon-and-date .text .date-lovestory{
-    font-size: 14.5px;
-    color: #e35d5d;
-    font-weight: 600;
-    
-} */
-
-
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&family=Source+Serif+Pro&display=swap');
