@@ -23,6 +23,7 @@ li a{
 h1,h2{
     color: rgb(252, 96, 13)
 }
+
 .admin{
     display: flex;
     /* width: 100vw; */

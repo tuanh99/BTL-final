@@ -13,7 +13,7 @@
     <title>Admin</title>
   </head>
   <body>
-    <!-- <div class="overlay">
+    <div class="overlay">
       <div class="admin_login">
         <img src="./assets/imgs/admin/slide-down.jpg" alt="">
         <h1>WELCOME</h1>
@@ -22,7 +22,7 @@
         <input id="password" type="password" placeholder="  Password..." />
         <button>Login</button>
       </div>
-    </div> -->
+    </div>
     <div class="admin">
       <div class="slide-menu">
         <div class="brand-name">
@@ -672,46 +672,6 @@
     
     </div>
     <script src="./assets/js/admin.js"></script>
-    <script>
-      let iconArrowRight = document.querySelector('.icon-arrow-right')
-      let mobile = document.querySelector('.slide-menu-mobile')
-      let icon = false 
-      console.log(iconArrowRight)
-      console.log(mobile);
-      iconArrowRight.onclick = () =>{
-          icon = !icon
-        if(icon){
-          mobile.style.transform = 'translateX(0)'
-        }
-        else{
-          mobile.style.transform = 'translateX(-100%)'
-        }
-      }
-    </script>
-    <!-- <script>
-      const overlay = document.querySelector(".overlay");
-      const account = document.querySelector("#account");
-      const password = document.querySelector("#password");
-
-      document.querySelector(".admin_login button").onclick = function () {
-        const valueA = account.value;
-        const valueP = password.value;
-        if (valueA === "admin" && valueP === "admin") {
-          document.querySelector(".overlay").style.display = "none";
-          document.querySelector(".admin").style.display = "flex";
-        }
-      };
-    </script>
-
-    <script>
-      let logOut = document.querySelector(".log-out");
-      logOut.addEventListener("click", () => {
-        document.querySelector(".overlay").style.display = "flex";
-        document.querySelector(".admin").style.display = "none";
-        account.value = ''
-        password.value = ''
-
-      });
-    </script> -->
+    
   </body>
 </html>

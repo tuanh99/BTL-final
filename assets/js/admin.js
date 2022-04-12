@@ -1,28 +1,30 @@
 
 
 // ********************************************************
-// let logOut = document.querySelector(".log-out");
-// logOut.addEventListener("click", () => {
-//   document.querySelector(".overlay").style.display = "flex";
-//   document.querySelector(".admin").style.display = "none";
-//   account.value = ''
-//   password.value = ''
+let logOut = document.querySelector(".log-out");
+logOut.addEventListener("click", () => {
+  document.querySelector(".overlay").style.display = "flex";
+  document.querySelector(".admin").style.display = "none";
+  account.value = ''
+  password.value = ''
 
-// });
+});
+
+
 
 /**********************************************/ 
-// const overlay = document.querySelector(".overlay");
-// const account = document.querySelector("#account");
-// const password = document.querySelector("#password");
+const overlay = document.querySelector(".overlay");
+const account = document.querySelector("#account");
+const password = document.querySelector("#password");
 
-// document.querySelector(".admin_login button").onclick = function () {
-//   const valueA = account.value;
-//   const valueP = password.value;
-//   if (valueA === "admin" && valueP === "admin") {
-//     document.querySelector(".overlay").style.display = "none";
-//     document.querySelector(".admin").style.display = "flex";
-//   }
-// };
+document.querySelector(".admin_login button").onclick = function () {
+  const valueA = account.value;
+  const valueP = password.value;
+  if (valueA === "admin" && valueP === "admin") {
+    document.querySelector(".overlay").style.display = "none";
+    document.querySelector(".admin").style.display = "flex";
+  }
+};
 
 
 /***********************Slide menu mobile***********************/ 
@@ -70,3 +72,10 @@ setInterval( () => {
   }
   },3000)
 /**********************************************/ 
+
+let dtlElement = document.querySelectorAll('i.bx.bx-x')
+dtlElement.forEach(dtl => {
+  dtl.onclick = () => {
+    dtl.parentElement.remove()
+  }
+})

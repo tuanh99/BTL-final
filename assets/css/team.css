@@ -204,6 +204,9 @@ i{
     box-shadow: 2px 2px 2px 2px #aaa;
     border-radius: 6px;
 }
+.member-item i{
+    /* display: none; */
+}
 @media (max-width: 1070px){
     .slide-menu{
         display: none;
